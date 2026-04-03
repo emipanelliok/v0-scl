@@ -112,11 +112,4 @@ export const zeroToAgentSponsors = [
     assetType: "svg" as const,
     height: 47,
   },
-  {
-    name: "Universidad Champagnat",
-    logo: "/sponsors/logochampa.svg",
-    url: "https://champagnat.edu.ar",
-    assetType: "svg" as const,
-    height: 80,
-  },
 ]
