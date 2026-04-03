@@ -1,0 +1,2 @@
+ALTER TABLE submissions ALTER COLUMN video_url DROP NOT NULL;
+ALTER TABLE submissions ALTER COLUMN notes DROP NOT NULL;
