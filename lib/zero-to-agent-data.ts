@@ -9,8 +9,8 @@ export const zeroToAgentData = {
   // Date & Location
   date: "2 DE MAYO DE 2026",
   locationLabel: "LUGAR",
-  venue: "Santiago de Chile",
-  venueAddress: "https://maps.app.goo.gl/",
+  venue: "Villavicencio 395, Barrio Lastarria, Santiago",
+  venueAddress: "https://www.google.com/maps/search/?api=1&query=Villavicencio+395,+Barrio+Lastarria,+Santiago,+Regi%C3%B3n+Metropolitana",
 
   // Event URL
   eventUrl: "https://luma.com/r6h41ax8",
