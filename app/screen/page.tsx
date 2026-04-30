@@ -8,6 +8,10 @@ const QR_BASE = "https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=
 
 const qrItems = [
   {
+    label: "Créditos v0",
+    url: "https://zerotoagent.dev/event/8TB-4FRmxo8NO8YK",
+  },
+  {
     label: "Recursos",
     url: "https://vercel.notion.site/02agentresources",
   },
