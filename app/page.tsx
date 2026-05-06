@@ -12,9 +12,10 @@ import {
   zeroToAgentSponsors,
 } from "@/lib/zero-to-agent-data"
 import { formatIndex, logos, type Sponsor } from "@/lib/data"
-import { ExternalLink, Trophy, MapPin } from "lucide-react"
+import { ExternalLink, Trophy, MapPin, Send } from "lucide-react"
 import Image from "next/image"
 import { ImageLightbox } from "@/components/image-lightbox"
+import Link from "next/link"
 
 // Custom hook for scroll-triggered animations
 function useInView(threshold = 0.1) {
@@ -124,7 +125,14 @@ export default function ZeroToAgentPage() {
                 ZERO TO AGENT
               </span>
             </a>
-            <div className="flex items-center gap-[18px]">
+            <div className="flex items-center gap-3">
+              <Link
+                href="/enviar"
+                className="group flex items-center gap-2 border border-white/20 text-white px-5 py-3 rounded-full text-[14px] font-mono tracking-[1px] transition-all duration-300 hover:border-white hover:bg-white/5"
+              >
+                <Send className="w-3.5 h-3.5" />
+                ENVIAR MI PROYECTO
+              </Link>
               <a
                 href="https://luma.com/r6h41ax8"
                 className="luma-checkout--button group bg-white text-[#0f172a] px-6 py-3 rounded-full text-[16px] font-medium leading-[24px] transition-all duration-300 hover:bg-gray-100 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] flex items-center"
