@@ -162,13 +162,20 @@ export default function ZeroToAgentPage() {
             <span className={`block overflow-hidden transition-all duration-1000 delay-500 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>Zero </span>
             <span className={`block pb-4 transition-all duration-1000 delay-700 font-pixel ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>to Agent</span>
           </h1>
-        </div>
 
-        <div className={`absolute bottom-[40px] left-0 right-0 z-20 transition-all duration-1000 delay-1200 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
-          <div className="w-full max-w-[1383px] mx-auto px-6 lg:px-5">
-            <button onClick={scrollToTabs} className="font-mono text-[14px] text-[#737373] tracking-[2.8px] flex items-center gap-3 group cursor-pointer hover:text-[#999] transition-colors duration-300">
-              <span>VER PROYECTOS</span>
-              <span className="inline-block animate-bounce">↓</span>
+          {/* Tabs en el hero */}
+          <div className={`px-0 lg:px-5 flex items-center gap-3 transition-all duration-1000 delay-900 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <button
+              onClick={() => { setActiveTab("showcase"); scrollToTabs() }}
+              className={`font-mono text-[13px] tracking-[2px] px-6 py-3 border transition-all duration-300 ${activeTab === "showcase" ? "border-white text-white bg-white/5" : "border-[#333] text-[#737373] hover:border-white/50 hover:text-white"}`}
+            >
+              SHOWCASE
+            </button>
+            <button
+              onClick={() => { setActiveTab("enviar"); scrollToTabs() }}
+              className={`font-mono text-[13px] tracking-[2px] px-6 py-3 border transition-all duration-300 ${activeTab === "enviar" ? "border-white text-white bg-white/5" : "border-[#333] text-[#737373] hover:border-white/50 hover:text-white"}`}
+            >
+              ENVIAR MI PROYECTO
             </button>
           </div>
         </div>
